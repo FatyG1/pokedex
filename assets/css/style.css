@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(236, 71, 71);
+}
+.containerCircle{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    background-color: brown;
+}
+.camera {
+    background: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #D7D7D7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.circleGreen{
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+.circleYellow{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;  
+}
+hr{
+    height: 10px;
+    background-color: black;
+
+}
+.containerImg{    
+    background-color: #92C5FC;    
+    padding: 250px;
+    border: 20px solid #D7D7D7;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.containerTxt{
+    background-color: #9bfc92;    
+    padding: 250px;
+    border: 20px solid #D7D7D7;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#btInfo, #btStats, #btAbilities{
+    background-color: yellow;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+#btSearch{
+    background-color: brown;
+        background-image:url('../img/estrella1.png');
+        background-repeat:no-repeat;
+        height:60px;
+        width:900px;
+        background-size: 50px 50px;
+        background-position:center;
+}
