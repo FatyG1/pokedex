@@ -35,7 +35,19 @@
     <button id="btAbilities">ABILITIES</button>
     </div>
     <div class="ContainerBtSearch">
-    <button id="btSearch"></button> 
-</div>
+    <button id="btSearch" onclick="window.modal.showModal();"></button> 
+    </div>
+    
+    <dialog id="modal">
+        <div class="containerLbModal">
+            <label> Search Pokemon:  </label>
+            <input type="text" class:="lbModal" placeholder="Pikachu" />
+        </div> 
+        <div class="containerModalButtons">
+        <button id="btModalSearch">Search</button>
+        <button id="btClose" onclick="window.modal.close();">Close</button>
+        </div>*/
+    </dialog>      
+    
 </body>
 </html>
