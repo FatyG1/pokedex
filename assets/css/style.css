@@ -1,76 +1,156 @@
+html {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
 body {
     background-color: rgb(236, 71, 71);
-}
-.containerCircle{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;    
-    background-color: brown;
+    flex-wrap: wrap;    
+    flex-basis: 100%;
+    margin: 0;
+   }
+
+.containerCircle{
+    display: flex;     
+    flex-basis: 100%;  
+    margin-bottom: 20%;    
+    background-color: brown; 
+    box-shadow: 0px 10px 20px black;
 }
+
 .camera {
     background: black;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 20%;
+    height: 60%;
     border: 20px solid #D7D7D7;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    
 }
+
 .circleGreen{
     background-color: green;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 5%; 
+    margin-bottom: 10%;  
 }
+
 .circleYellow{
     background-color: yellow;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 80px;  
+    width: 38px;
+    height: 38px;
+    margin-top: 15%;
 }
-hr{
-    height: 10px;
-    background-color: black;
 
-}
-.containerImg{    
+.containerImg{   
+    display: flex; 
     background-color: #92C5FC;    
     padding: 250px;
     border: 20px solid #D7D7D7;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 40px;
+    margin-left: 2.5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    flex-basis: 100%;
 }
+
 .containerTxt{
     background-color: #9bfc92;    
     padding: 250px;
     border: 20px solid #D7D7D7;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 5%;
+    flex-basis: 100%;
+    width: 40px;
+    margin-left: 2.5%;
+    margin-right: 5%;
 }
+
+.containerButtons{
+    displaY: flex;
+    margin: 0 auto; 
+  
+}
+
 #btInfo, #btStats, #btAbilities{
     background-color: yellow;
     text-align: center;
-    width: 100px;
-    height: 30px;
-    margin-top: 30px;
-    margin-bottom: 40px; 
-    margin-left: 20px;
-    margin-right: 20px;    
+    font-size: 20px;
+    width:160px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 15%; 
+    
+}
+
+.ContainerBtSearch{
+    display: flex;
+    flex-basis: 100%;    
+    margin-top: 5%;     
+    background-color: brown;  
+    box-shadow: 0px -10px 20px black; 
 }
 
 #btSearch{
-    background-color: brown;
-        background-image:url('../img/estrella1.png');
+        display: flex;
+        flex-basis:100%;
+        background-color: brown;
+        background-image:url('../img/lupa.png');
         background-repeat:no-repeat;
-        height:60px;
-        width:900px;
-        background-size: 50px 50px;
-        background-position:center;
+        height:80px; 
+        background-size: 60px 60px;
+        background-position:center;                      
+}
+
+dialog{
+    justify-content: center;
+    background-color: rgb(236, 71, 71);;
+    flex-basis: 100%;
+}
+
+dialog .containerLbModal label{
+    display: flex;  
+    border-radius: 20px;
+    background-color: greenyellow;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 6vh;
+    justify-content: center;
+    font-size: 24px;
+}
+
+dialog .containerLbModal input{
+    display: flex;
+    width: 60vw;
+    border-radius: 20px;   
+    padding: 10px 10px;
+    font-size: 18px; 
+}
+
+dialog .containerModalButtons{
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+#btClose, #btModalSearch{
+    background-color: yellow;    
+    text-align: center;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    margin: 0 2%;    
 }
