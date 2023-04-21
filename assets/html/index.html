@@ -4,50 +4,58 @@
     <title>Pokedex</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href = "../css/style.css" rel ="stylesheet" />
-    
+    <link href = "../css/style.css" rel ="stylesheet" />   
     
 </head>
 <body>
-    <div class="containerCircle">
-        <div class="camera">
-
-        </div>
     
-        <div class="circleGreen">
-
-        </div>
-        <div class="circleYellow">
-            
-        </div>
-    </div>
-   
     
-    <div class="containerImg">
+    
+   <div class="containerCircle">
+    <div class="camera">
 
     </div>
-    <div class="containerTxt">
+
+    <div class="circleGreen">
 
     </div>
-    <div class="containerButtons">
+    <div class="circleYellow">
+        
+    </div>
+</div>
+
+<div class="containerImg">
+    
+</div>
+
+<div class="containerTxt">
+    
+</div>
+</div>
+
+<div class="containerButtons">
     <button id="btInfo">INFO</button>
     <button id="btStats">STATS</button>
     <button id="btAbilities">ABILITIES</button>
-    </div>
-    <div class="ContainerBtSearch">
+</div>
+
+<div class="ContainerBtSearch">
     <button id="btSearch" onclick="window.modal.showModal();"></button> 
-    </div>
-    
-    <dialog id="modal">
-        <div class="containerLbModal">
-            <label> Search Pokemon:  </label>
-            <input type="text" class:="lbModal" placeholder="Pikachu" />
-        </div> 
-        <div class="containerModalButtons">
-        <button id="btModalSearch">Search</button>
+</div>
+
+<dialog id="modal">
+
+    <div class="containerLbModal">
+        <label> Search Pokemon:  </label>
+        <input type="text" id='namePokemon' placeholder="Pikachu" />
+    </div> 
+
+    <div class="containerModalButtons">
+        <button id="btModalSearch" onclick="window.modal.close();" >Search</button>
         <button id="btClose" onclick="window.modal.close();">Close</button>
-        </div>*/
-    </dialog>      
-    
+    </div>
+
+</dialog> 
+<script src="../js/pokemon.js"></script>    
 </body>
 </html>
