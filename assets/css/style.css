@@ -51,13 +51,14 @@ body {
     height: 38px;
     margin-top: 15%;
 }
-
+.b { display: inline-block; }
 .containerImg{   
     display: flex; 
     background-color: #92C5FC;    
-    padding: 250px;
+    height: 70vh;
+    width: 70vw;
     border: 20px solid #D7D7D7;
-    width: 40px;
+    
     margin-left: 2.5%;
     margin-right: 5%;
     margin-top: 5%;
@@ -65,14 +66,16 @@ body {
 }
 
 .containerTxt{
+    display:flex;
     background-color: #9bfc92;    
-    padding: 250px;
+    height: 70vh;
+    width: 70vw;
     border: 20px solid #D7D7D7;
     margin-top: 5%;
-    flex-basis: 100%;
-    width: 40px;
+    flex-basis: 100%;   
     margin-left: 2.5%;
     margin-right: 5%;
+    text-align: left;
 }
 
 .containerButtons{
