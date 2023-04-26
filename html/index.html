@@ -4,7 +4,8 @@
     <title>Pokedex</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href = "../css/style.css" rel ="stylesheet" />   
+    <link href = "../assets/css/normalize.css" rel = "stylesheet" />
+    <link href = "../assets/css/style.css" rel ="stylesheet" />   
     
 </head>
 <body>
@@ -34,9 +35,9 @@
 </div>
 
 <div class="containerButtons">
-    <button id="btInfo">INFO</button>
-    <button id="btStats">STATS</button>
-    <button id="btAbilities">ABILITIES</button>
+    <button id="btInfo" class = "btn">INFO</button>
+    <button id="btStats" class ="btnPrincipal">STATS</button>
+    <button id="btAbilities" class ="btn">ABILITIES</button>
 </div>
 
 <div class="ContainerBtSearch">
@@ -54,11 +55,11 @@
     </div> 
 
     <div class="containerModalButtons">
-        <button id="btModalSearch" onclick="window.modal.close();" >Search</button>
-        <button id="btClose" onclick="window.modal.close();">Exit</button>
+        <button id="btModalSearch" class = "btn" onclick="window.modal.close();" >Search</button>
+        <button id="btClose" class = "btn" onclick="window.modal.close();">Exit</button>
     </div>
 
 </dialog> 
-<script src="../js/pokemon.js"></script>    
+<script src="../assets/js/pokemon.js"></script>    
 </body>
 </html>

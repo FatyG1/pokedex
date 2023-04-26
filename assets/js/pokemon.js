@@ -16,7 +16,7 @@ const insertPokemon = async() =>{
        
         const img = data.sprites.other.dream_world.front_default;
             document.querySelector('.containerImg').innerHTML = `
-            <img id="image" src=  ${img} >
+            <img id="image" class = "img" src=  ${img} >
             `
     }catch (error){
         console.log(error)        
@@ -25,11 +25,11 @@ const insertPokemon = async() =>{
                 <dialog id="modal1">
     
                 <div class="containerLbModalNull">
-                    <label> pokemon not found </label>
+                    <label> Pokemon not found </label>
                 </div> 
     
-                <div class="containerModalButtonsNull">
-                    <button id="btClose1" onclick="window.modal1.close();">Exit</button>
+                <div class="containerModalButtons">
+                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
                 </div>
         
                 `
@@ -66,7 +66,7 @@ async function infoPokemon(){
                 </div> 
     
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
                 </div>
         
                 `
@@ -109,7 +109,7 @@ async function statsPokemon(){
                 </div> 
 
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
                 </div>
 
                 </dialog>
@@ -157,7 +157,7 @@ async function abilitiesPokemon(){
                 </div> 
 
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
                 </div>
 
                 </dialog>        

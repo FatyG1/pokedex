@@ -1,207 +1,184 @@
-html {
+/*html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;    
-}
+}*/
 
 body {
+    position: relative;
     background-color: rgb(236, 71, 71);
     display: flex;
     flex-wrap: wrap;    
     flex-basis: 100%;
-    margin: 0;
-   }
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
 .containerCircle{
-    display: flex;     
+    display: flex;       
     flex-basis: 100%;  
-    margin-bottom: 20%;    
-    background-color: brown; 
-    box-shadow: 0px 10px 20px black;
+    background-color: brown;
+    padding: 0.5rem;    
 }
 
 .camera {
     background: black;
     border-radius: 50%;
-    width: 20%;
-    height: 60%;
-    border: 20px solid #D7D7D7;
-    margin-top: 2%;
-    margin-bottom: 20%;
-    margin-left: 5%;
-    
+    width: 8vw;
+    height: 6vh;
+    margin: auto 0.5rem;
+    border: 0.5rem solid #D7D7D7;
 }
 
 .circleGreen{
     background-color: green;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-top: 15%;
-    margin-left: 10%;
-    margin-right: 5%; 
-    margin-bottom: 10%;  
+    width: 2.5vw;
+    height: 2.5vh;
+    margin: auto 0.5rem;    
 }
 
 .circleYellow{
     background-color: yellow;
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    margin-top: 15%;
+    width: 2.5vw;
+    height: 2.5vh;
+    margin: auto 0.5rem;
 }
 
 .containerImg{   
     display: flex; 
-    justify-content: center;
-    background-color: #92C5FC;    
-    height: 70vh;
-    width: 70vw;
-    border: 20px solid #D7D7D7;    
-    margin-left: 2.5%;
-    margin-right: 5%;
-    margin-top: 5%;
     flex-basis: 100%;
-}
-
-.containerTxt{
-    display:block;
-    background-color: #9bfc92;    
-    height: 70vh;
-    width: 70vw;
-    border: 20px solid #D7D7D7;
-    margin-top: 5%;
-    flex-basis: 100%;   
-    margin-left: 2.5%;
-    margin-right: 5%;
-    text-align: left;
-}
-
-#list{    
-    height: 70vh;
-    max-width: 90vw;
-    margin: 2% auto;
-    list-style-type: decimal;    
     justify-content: center;
-    font-size: 18px;
+    background-color: #92C5FC;  
+    padding: 0.5rem;    
+    height: 40vh;
+    width: 40vw; 
+    border: 1rem solid #D7D7D7; 
+    margin: 0.3rem 0.2rem;   
+}
+
+.img{
+    width: 100%;
+}
+
+.containerTxt{  
+    flex-direction: column;
+    flex-basis: 100%; 
+    background-color: #9bfc92;
+    padding: 0.5rem;    
+    min-height: 25vh;
+    min-width: 25vw;
+    border: 1rem solid #D7D7D7;
+    margin: 0 0.2rem;
+}
+
+#list{ 
+    list-style-type: decimal;    
+    font-size: 1rem;
     color:rgb(79, 33, 180);
     font-family: Verdana, Tahoma, sans-serif;
     font-style: italic;
+    margin: 0.3rem;
 }
-
 LI{
-    margin: 2%;
+    margin: 0.2rem auto;
 }
-
-h1{    
+h1{
     color:rgb(79, 33, 180);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-style: italic;
     text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto; 
 }
 
 .containerButtons{
-    displaY: flex;
+    display: flex;
     margin: 0 auto;   
 }
 
-#btInfo, #btStats, #btAbilities{
+.btnPrincipal{
+    flex-basis: 33%;
     background-color: yellow;
     text-align: center;
-    font-size: 20px;
-    width:160px;
-    height: 50px;
-    margin-left: 10px;
-    margin-top: 5%;
-    margin-bottom: 15%;     
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0.3rem;
+}
+
+.btn{
+    flex-basis: 33%;
+    background-color: yellow;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.6rem auto;
 }
 
 .ContainerBtSearch{
     display: flex;
     flex-basis: 100%;    
-    margin-top: 5%;     
+    margin-bottom: 0 auto;    
     background-color: brown;  
-    box-shadow: 0px -10px 20px black; 
+    
 }
 
 #btSearch{
-        display: flex;
         flex-basis:100%;
         background-color: brown;
         background-image:url('../img/lupa.png');
         background-repeat:no-repeat;
-        height:80px; 
-        background-size: 60px 60px;
-        background-position:center;                      
+        padding: 1.8rem;         
+        background-position:center; 
+        background-size: contain;                     
 }
 
 dialog, .containerModal{
-    justify-content: center;
-    background-color: rgb(236, 71, 71);;
     flex-basis: 100%;
+    justify-content: center;
+    position: fixed;
+    margin-bottom: 0;
+    background-color: rgb(236, 71, 71);
 }
 
 dialog .containerLbModal label{
     display: flex;  
-    border-radius: 20px;
+    border-radius: 1rem;
     background-color: greenyellow;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    height: 6vh;
+    margin: 0.3rem auto;
+    width: 45vw;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
+    padding: 0.3rem;
 }
 
 dialog .containerLbModalNull label{
     display: flex;  
-    border-radius: 20px;
+    border-radius: 1rem;
     background-color: greenyellow;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 58vw;
+    margin: 0.3rem auto;
     justify-content: center;
-    font-size: 24px;
-    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0.3rem;   
 }
 
 dialog .containerLbModal input{
     display: flex;
     width: 60vw;
-    border-radius: 20px;   
-    padding: 10px 10px;
-    font-size: 18px; 
+    border-radius: 1.5rem;   
+    padding: 1rem 1rem;
+    font-size: 1.5rem; 
 }
 
 dialog .containerModalButtons{
     display: flex;
     justify-content: center;
-    margin: 5% auto;
+    margin: 0.5rem auto;
 }
+
 dialog .containerModalButtonsNull{
     display: flex;
     justify-content: center;
-    margin: 5% auto;
-}
-
-#btClose, #btModalSearch{
-    background-color: yellow;    
-    text-align: center;
-    font-size: 20px;
-    width: 80px;
-    height: 30px;
-    margin: 0 2%;    
-}
-
-#btClose1{
-    background-color: yellow;    
-    text-align: center;
-    font-size: 20px;
-    width: 80px;
-    height: 30px;
-    margin: 0 2%;    
+    margin: 0.3rem auto;
 }
