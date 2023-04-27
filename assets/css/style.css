@@ -24,8 +24,8 @@ body {
 .camera {
     background: black;
     border-radius: 50%;
-    width: 8vw;
-    height: 6vh;
+    width: 50px;
+    height: 50px;
     margin: auto 0.5rem;
     border: 0.5rem solid #D7D7D7;
 }
@@ -33,16 +33,16 @@ body {
 .circleGreen{
     background-color: green;
     border-radius: 50%;
-    width: 2.5vw;
-    height: 2.5vh;
+    width: 20px;
+    height: 20px;
     margin: auto 0.5rem;    
 }
 
 .circleYellow{
     background-color: yellow;
     border-radius: 50%;
-    width: 2.5vw;
-    height: 2.5vh;
+    width: 20px;
+    height: 20px;
     margin: auto 0.5rem;
 }
 
