@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <title>Pokedex</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href = "../assets/css/normalize.css" rel = "stylesheet" />
-    <link href = "../assets/css/style.css" rel ="stylesheet" />   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href = "../assets/css/style.css" rel ="stylesheet" />   
     
 </head>
 <body>
-    
-    
-    
-   <div class="containerCircle">
-    <div class="camera">
+    <div class = "container-fluid containerCircle">
+        <div class="row">
+            <div class="camera">
 
-    </div>
+            </div>
 
-    <div class="circleGreen">
+            <div class="circleGreen">
 
-    </div>
-    <div class="circleYellow">
+            </div>
+            <div class="circleYellow">
+                
+            </div>
+        </div>
+</div>
+<div class = "container-fluid ">
+  <div class ="row">
+    <div class="col -12 containerImg">
         
+   </div>
+  </div>
+  </div>
+  <div class = "container-fluid ">
+    <div class ="row">
+    <div class="col -12 containerTxt">      
+    </div>
+  </div>
+</div>
+
+<div class= "containerButtons">
+    <button type="button" class="btn btn-warning bt" id="btInfo" >INFO</button>
+    <button type="button" class="btn btn-warning btnPrincipal"  id="btStats" >STATS</button>
+    <button type="button" class="btn btn-warning bt" id="btAbilities" >ABILITIES</button>
+</div>
+
+<div class = "container-fluid ContainerBtSearch ">
+    <div class="row justify-content-center ">
+        <button type="button" class="btn btn-primary bt" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btSearch">            
     </div>
 </div>
 
-<div class="containerImg">
-    
-</div>
-
-<div class="containerTxt">
-   
-</div>
-</div>
-
-<div class="containerButtons">
-    <button id="btInfo" class = "btn">INFO</button>
-    <button id="btStats" class ="btnPrincipal">STATS</button>
-    <button id="btAbilities" class ="btn">ABILITIES</button>
-</div>
-
-<div class="ContainerBtSearch">
-    <button id="btSearch" onclick="window.modal.showModal();"></button> 
-</div>
-
-<div class = "containerModal">
-   
-</div>
-<dialog id="modal">
-
-    <div class="containerLbModal">
-        <label> Search Pokemon:  </label>
-        <input type="text" id='namePokemon' placeholder="Pikachu" />
-    </div> 
-
-    <div class="containerModalButtons">
-        <button id="btModalSearch" class = "btn" onclick="window.modal.close();" >Search</button>
-        <button id="btClose" class = "btn" onclick="window.modal.close();">Exit</button>
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog fixed-bottom">
+      <div class="modal-content containerModal">
+        <div class="modal-header">
+            <label> Search Pokemon:  </label>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="text" id='namePokemon' placeholder="Pikachu" />
+        </div>
+        <div class="modal-footer">          
+          <button type="button" class="btn btn-warning bt" id="btModalSearch">Search</button>
+          <button type="button" class="btn btn-warning bt" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-
-</dialog> 
+  </div>
+  
+  <div class = "containerModal1">
+   
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="../assets/js/pokemon.js"></script>    
 </body>
 </html>

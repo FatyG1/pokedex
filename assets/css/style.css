@@ -1,9 +1,3 @@
-html {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
-}
-
 body {
     position: relative;
     background-color: rgb(236, 71, 71);
@@ -13,19 +7,16 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-.containerCircle{
-    display: flex;       
-    flex-basis: 100%;  
+.containerCircle{     
     background-color: brown;
-    padding: 0.5rem;    
+    padding: 0.8rem;    
 }
 
 .camera {
     background: black;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin: auto 0.5rem;
     border: 0.5rem solid #D7D7D7;
 }
@@ -46,31 +37,27 @@ body {
     margin: auto 0.5rem;
 }
 
-.containerImg{   
+.containerImg{        
     display: flex; 
-    flex-basis: 100%;
-    justify-content: center;
     background-color: #92C5FC;  
     padding: 0.5rem;    
     height: 40vh;
-    width: 40vw; 
+    width:40vw; 
     border: 1rem solid #D7D7D7; 
-    margin: 0.3rem 0.2rem;   
+    margin: 0.4rem 0.3rem;   
 }
 
 .img{
-    width: 100%;
+    width: 100%;    
 }
 
 .containerTxt{  
-    flex-direction: column;
-    flex-basis: 100%; 
     background-color: #9bfc92;
     padding: 0.5rem;    
-    min-height: 25vh;
-    min-width: 25vw;
+    min-height: 30vh;
+    min-width: 30vw;
     border: 1rem solid #D7D7D7;
-    margin: 0 0.2rem;
+    margin: 0 0.3rem;
 }
 
 #list{ 
@@ -81,9 +68,11 @@ body {
     font-style: italic;
     margin: 0.3rem;
 }
+
 LI{
     margin: 0.2rem auto;
 }
+
 h1{
     color:rgb(79, 33, 180);
     font-family: Verdana, Tahoma, sans-serif;
@@ -93,64 +82,61 @@ h1{
     margin: 0 auto; 
 }
 
-.containerButtons{
-    display: flex;
+.containerButtons{    
     margin: 0 auto;   
-}
+} 
 
-.btnPrincipal{
-    flex-basis: 33%;
+.btnPrincipal{    
     background-color: yellow;
-    text-align: center;
+    margin: 0 0.3rem;
     font-size: 1.2rem;
-    padding: 0.5rem;
-    margin: 0.5rem 0.3rem;
 }
 
-.btn{
-    flex-basis: 33%;
+.bt{
     background-color: yellow;
-    text-align: center;
     font-size: 1.2rem;
-    padding: 0.5rem;
-    margin: 0.6rem auto;
+    margin: 0.8rem auto;
 }
 
-.ContainerBtSearch{
-    display: flex;
-    flex-basis: 100%;    
-    margin-bottom: 0 auto;    
-    background-color: brown;  
-    
+#btSearch{    
+    background-color: brown;
+    background-image:url('../img/lupa.png');
+    background-repeat:no-repeat;
+    padding: 2rem;         
+    background-position: center;       
 }
 
-#btSearch{
-        flex-basis:100%;
-        background-color: brown;
-        background-image:url('../img/lupa.png');
-        background-repeat:no-repeat;
-        padding: 1.8rem;         
-        background-position:center; 
-        background-size: contain;                     
+.modal-body{
+    margin: 0 auto;    
 }
 
-dialog, .containerModal{
+input{
+    width: 80vw;
+    border-radius: 1.5rem;   
+    padding: 1rem 1rem;
+    font-size: 1.5rem;     
+}
+
+.containerModal{       
+    background-color:  rgb(236, 71, 71);
+}
+
+label{    
+    border-radius: 1rem;
+    background-color: rgb(229, 249, 200);
+    margin: 0 auto;
+    width: 55vw;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+dialog, .containerModal1{
     flex-basis: 100%;
     justify-content: center;
     position: fixed;
     margin-bottom: 0;
     background-color: rgb(236, 71, 71);
-}
-
-dialog .containerLbModal label{
-    display: flex;  
-    border-radius: 1rem;
-    background-color: greenyellow;
-    margin: 0.3rem auto;
-    width: 45vw;
-    justify-content: center;
-    font-size: 1.5rem;
-    padding: 0.3rem;
 }
 
 dialog .containerLbModalNull label{
@@ -163,20 +149,11 @@ dialog .containerLbModalNull label{
     padding: 0.3rem;   
 }
 
-dialog .containerLbModal input{
-    display: flex;
-    width: 60vw;
-    border-radius: 1.5rem;   
-    padding: 1rem 1rem;
-    font-size: 1.5rem; 
-}
-
 dialog .containerModalButtons{
     display: flex;
     justify-content: center;
     margin: 0.5rem auto;
 }
-
 dialog .containerModalButtonsNull{
     display: flex;
     justify-content: center;

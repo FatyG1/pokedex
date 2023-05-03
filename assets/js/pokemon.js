@@ -7,6 +7,7 @@ const btSearch = document.getElementById('btSearch')
 const btInfo = document.getElementById('btInfo')
 const btStats = document.getElementById('btStats')
 const btAbilities= document.getElementById('btAbilities')
+const btClose1= document.getElementById('btClose1')
 
 //Función insertPokemon conectara con la PokeApi y devolvera el pokemon solicitado
 const insertPokemon = async() =>{
@@ -15,12 +16,12 @@ const insertPokemon = async() =>{
         data = await res.json()
        
         const img = data.sprites.other.dream_world.front_default;
-            document.querySelector('.containerImg').innerHTML = `
-            <img id="image" class = "img" src=  ${img} >
+            document.querySelector('.container-fluid .containerImg').innerHTML = `            
+                <img id="image" class = "img" src=  ${img} >  
             `
     }catch (error){
         console.log(error)        
-        document.querySelector('.containerModal').innerHTML =`
+            document.querySelector('.containerModal1').innerHTML =`
             
                 <dialog id="modal1">
     
@@ -29,11 +30,11 @@ const insertPokemon = async() =>{
                 </div> 
     
                 <div class="containerModalButtons">
-                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "bt" onclick="window.modal1.close();">Exit</button>
                 </div>
         
                 `
-                btSearch.addEventListener('click', window.modal1.showModal())        
+                btSearch.addEventListener('click', window.modal1.showModal())    
 }
 return data; 
 }
@@ -57,20 +58,20 @@ async function infoPokemon(){
 
     try{    
         if(pokemon.value == ""){
-            document.querySelector('.containerModal').innerHTML =`
+            document.querySelector('.containerModal1').innerHTML =`
             
                 <dialog id="modal1">
-    
+
                 <div class="containerLbModalNull">
                     <label> You must first look for a pokemon  </label>
                 </div> 
-    
+
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "bt" onclick="window.modal1.close();">Exit</button>
                 </div>
-        
-                `
-            btInfo.addEventListener('click', window.modal1.showModal())
+    
+            `
+        btInfo.addEventListener('click', window.modal1.showModal())
     
         }else{
         document.querySelector('.containerTxt').innerHTML =  `
@@ -101,7 +102,7 @@ async function statsPokemon(){
     try{
         
         if(pokemon.value == ""){
-            document.querySelector('.containerModal').innerHTML =`            
+            document.querySelector('.containerModal1').innerHTML =`            
                 <dialog id="modal1">
 
                 <div class="containerLbModalNull">
@@ -109,12 +110,13 @@ async function statsPokemon(){
                 </div> 
 
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "bt" onclick="window.modal1.close();">Exit</button>
                 </div>
 
                 </dialog>
                 `
-            btStats.addEventListener('click', window.modal1.showModal())
+            btStats.addEventListener('click', window.modal1.showModal());
+           
 
         }else{
             document.querySelector('.containerTxt').innerHTML =  `
@@ -149,7 +151,8 @@ async function abilitiesPokemon(){
 
     try{    
         if(pokemon.value == ""){
-            document.querySelector('.containerModal').innerHTML =`            
+            document.querySelector('.containerModal1').innerHTML =`  
+                      
                 <dialog id="modal1">
 
                 <div class="containerLbModalNull">
@@ -157,7 +160,7 @@ async function abilitiesPokemon(){
                 </div> 
 
                 <div class="containerModalButtonsNull">
-                    <button id="btClose1" class = "btn" onclick="window.modal1.close();">Exit</button>
+                    <button id="btClose1" class = "bt" onclick="window.modal1.close();">Exit</button>
                 </div>
 
                 </dialog>        
@@ -192,5 +195,21 @@ function clean(){
     document.querySelector('.containerTxt').innerHTML =  ``
     document.querySelector('.containerImg').innerHTML =  ``
 }
-   
-            
+
+/*function mostrarModal(){
+    document.querySelector('.containerModal').innerHTML =`            
+                <dialog open id="modal1">
+
+                <div class="containerLbModalNull">
+                    <label> You must first look for a pokemon  </label>
+                </div> 
+
+                <div class="containerModalButtonsNull">
+                    <button type="button" id="btClose1" class="btn-close bt" aria-label="Close" >Exit</button>
+                </div>
+
+                </dialog>
+                `
+
+}*/
+
