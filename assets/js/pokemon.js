@@ -1,3 +1,5 @@
+
+
 //Creación de variables
 let data;
 
@@ -45,6 +47,8 @@ btAbilities.addEventListener('click', abilitiesPokemon)
 btStats.addEventListener('click', statsPokemon)
 btInfo.addEventListener('click', infoPokemon)
 btSearch.addEventListener('click', clean)
+
+
 
 /*Función infopokemon devolvera información sobre el pokemón solicitado
   Si no se ha introducido ningún pokemón lanzará una ventana emergente avisándolo*/
@@ -195,21 +199,3 @@ function clean(){
     document.querySelector('.containerTxt').innerHTML =  ``
     document.querySelector('.containerImg').innerHTML =  ``
 }
-
-/*function mostrarModal(){
-    document.querySelector('.containerModal').innerHTML =`            
-                <dialog open id="modal1">
-
-                <div class="containerLbModalNull">
-                    <label> You must first look for a pokemon  </label>
-                </div> 
-
-                <div class="containerModalButtonsNull">
-                    <button type="button" id="btClose1" class="btn-close bt" aria-label="Close" >Exit</button>
-                </div>
-
-                </dialog>
-                `
-
-}*/
-
