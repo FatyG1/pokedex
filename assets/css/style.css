@@ -32,15 +32,8 @@ video{
   width:100%;
   height:100%;
   border-radius: 100%;
-  position: relative;   
-  
+  position: relative; 
 }
-/*video{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    margin: auto 0.5rem;
-}*/
 
 .circleGreen{
     background-color: green;
@@ -106,13 +99,6 @@ h1{
 .containerButtons{    
     margin: 0 auto;   
 } 
-
-.btnPrincipal{    
-    background-color: yellow;
-    margin: 0 0.3rem;
-    font-size: 1.2rem;
-    font-family: 'VT323', monospace;
-}
 
 .bt{
     background-color: yellow;
