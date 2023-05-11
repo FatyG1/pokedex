@@ -112,10 +112,14 @@ h1{
     background-image:url('../img/lupa.png');
     background-repeat:no-repeat;
     padding: 2rem;         
-    background-position: center; 
-    font-family: 'VT323', monospace;     
+    background-position: center;      
 }
-
+#btQr{    
+    background-color: brown;
+    padding: 2rem;         
+    font-size: 2rem;
+    color: black;
+}
 .modal-body{
     margin: 0 auto;    
 }
